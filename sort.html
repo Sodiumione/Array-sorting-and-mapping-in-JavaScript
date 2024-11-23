@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Javascript Array Sort Reverse</h2>
+    <button onclick="sortfunction()">Sort Me</button>
+    <button onclick="reversefunction()">Reverse Me</button>
+    <p id="result"></p>
+    <script>
+      var fruits = ["Banana", "Orange", "Apple", "Mango"];
+      document.getElementById("result").innerHTML = fruits;
+      function sortfunction() {
+        fruits.sort();
+        document.getElementById("result").innerHTML = fruits;
+      }
+      function reversefunction() {
+        fruits.reverse();
+        document.getElementById("result").innerHTML = fruits;
+      }
+    </script>
+  </body>
+</html>
